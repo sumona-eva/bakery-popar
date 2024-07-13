@@ -1,0 +1,91 @@
+@import "./font.scss";
+
+:root {
+    --primary: #065f46;
+
+  }
+.container {
+    @apply mx-auto max-w-[95%] lg:max-w-[90%] 2xl:max-w-[80%];
+}
+
+.overlay {
+    @apply relative overflow-hidden;
+}
+.overlay::before {
+    content: '';
+    @apply absolute top-0 left-0 right-0 bottom-0 w-full h-full bg-secondary bg-opacity-70;
+}
+// font family
+
+.font-roboto{
+    font-family: "Roboto", sans-serif;
+}
+.font-playfair{
+    font-family: "Playfair Display", serif;
+}
+h2{
+    @apply bg-gradient-to-r from-primary to-secondary inline-block text-transparent bg-clip-text;
+}
+
+// all-products sidebar css
+.cetagory-links {
+    margin-top: -360px;
+    transition: all ease-in-out 0.3s;
+    opacity: 0;
+    &--active {
+        margin-top: 0;
+        transition: all ease-in-out 0.3s;
+        opacity: 1;
+    }
+}
+.price-links {
+    margin-top: -360px;
+    transition: all ease-in-out 0.3s;
+    opacity: 0;
+    &--active {
+        margin-top: 0;
+        transition: all ease-in-out 0.3s;
+        opacity: 1;
+    }
+}
+.location-links {
+    margin-top: -360px;
+    transition: all ease-in-out 0.3s;
+    opacity: 0;
+    &--active {
+        margin-top: 0;
+        transition: all ease-in-out 0.3s;
+        opacity: 1;
+    }
+}
+
+.category-filter {
+    input[type="checkbox"]:checked + label{
+        .icon {
+            @apply border-4 border-secondary;
+        }
+    }
+}
+   
+
+/* hamburg menu */
+.elegance-hamburger-menu {
+    @apply inline-flex;
+}
+.elegance-hamburger-menu .elegance-hamburger-menu__btn--active span {
+    @apply rotate-45 before:rotate-[0] before:top-0 after:rotate-90 after:top-0;
+}
+.elegance-hamburger-menu__btn {
+    @apply flex items-center w-[24px] h-[24px] relative cursor-pointer;
+}
+.elegance-hamburger-menu__btn span {
+    @apply block absolute w-full h-[3px] bg-primary transition-all duration-[0.3s] ease-[ease-in-out] before:-top-2 after:top-2;
+}
+.elegance-hamburger-menu__btn span::before,
+.elegance-hamburger-menu__btn span::after {
+    @apply content-[""] block absolute w-full h-[3px] bg-secondary transition-all duration-[0.3s] ease-[ease-in-out];
+}
+.swiper-button-prev::after, .swiper-button-next::after{
+    color:#ffffff !important;
+    font-size: 20px !important;
+}
