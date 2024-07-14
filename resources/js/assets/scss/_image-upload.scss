@@ -1,0 +1,51 @@
+.file-upload-container {
+    @apply w-full h-auto bg-white;
+    &-wrapper {
+        @apply border p-2 rounded-md bg-gray-50 flex flex-wrap gap-3;
+        &__preview {
+            @apply relative;
+            &-item {
+                @apply w-48 h-28 rounded-md object-cover;
+            }
+            &-cancel {
+                @apply bg-primary rounded-full flex items-center justify-center absolute top-1 right-1 h-6 w-6;
+            }
+        }
+        &__add {
+            label {
+                border: 2px dashed green;
+
+                width: 200px;
+                height: 120px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                span {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 999px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #fff;
+                    svg {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+    .upload-image {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;cursor: pointer;
+        svg {
+            width: 20px;
+            height: 20px;
+            color: #fff;
+        }
+    }
+}

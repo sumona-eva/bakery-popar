@@ -52,32 +52,42 @@ const router = createRouter({
     {
       path: '/dashboard/products',
       name: 'Products',
-      component: () => import('@/pages/Dashboard/Products.vue')
+      component: () => import('@/pages/Dashboard/Products/Index.vue')
+    },
+    {
+      path: '/dashboard/create-product',
+      name: 'ProductsAdd',
+      component: () => import('@/pages/Dashboard/Products/Add.vue')
     },
     {
       path: '/dashboard/category',
       name: 'Category',
-      component: () => import('@/pages/Dashboard/Category.vue')
+      component: () => import('@/pages/Dashboard/Category/Index.vue')
+    },
+    {
+      path: '/dashboard/create-category',
+      name: 'CategoryCreate',
+      component: () => import('@/pages/Dashboard/Category/Add.vue')
     },
     {
       path: '/dashboard/order',
       name: 'Order',
-      component: () => import('@/pages/Dashboard/Order.vue')
+      component: () => import('@/pages/Dashboard/Order/Index.vue')
     },
     {
       path: '/dashboard/order-area',
       name: 'OrderArea',
-      component: () => import('@/pages/Dashboard/OrderArea.vue')
+      component: () => import('@/pages/Dashboard/OrderArea/Index.vue')
     },
     {
       path: '/dashboard/customer',
       name: 'Customer',
-      component: () => import('@/pages/Dashboard/Customer.vue')
+      component: () => import('@/pages/Dashboard/Customer/Index.vue')
     },
     {
       path: '/dashboard/settings',
       name: 'Settings',
-      component: () => import('@/pages/Dashboard/Settings.vue')
+      component: () => import('@/pages/Dashboard/Settings/Index.vue')
     },
   ]
 })
