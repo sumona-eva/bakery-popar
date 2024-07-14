@@ -34,8 +34,8 @@ const toggleNav = ref(false);
                      
 
                     <div :class="{'translate-x-0': toggleNav, 'translate-x-80': !toggleNav}" class="fixed top-0 right-0 bottom-0 w-64 h-full z-50 lg:hidden transition-all ease-in-out duration-500
-                         bg-white border-2 border-gray-100">
-                         <div class="flex justify-between p-5">
+                         bg-white border-2 border-gray-100 overflow-y-scroll">
+                         <div class="flex justify-between py-4 px-3">
                             <button  @click="toggleNav = false">
                                 <Icon name="material-symbols:close-small" class=" text-4xl text-secondary" />
                             </button>
@@ -45,23 +45,62 @@ const toggleNav = ref(false);
                             </span>
                          </div>
                         
-                        <ul class="px-5 font-bold font-playfair text-xl bg-gradient-to-r from-primary to-secondary inline-block text-transparent bg-clip-text">
-                            <li class="pt-2">
-                                <RouterLink to="/">Home</RouterLink>
-                            </li>
-                            <li class="pt-2">
-                                <RouterLink to="/all-products">All Products</RouterLink>
-                            </li>
-                            <li class="pt-2">
-                                <RouterLink to="/">Package</RouterLink>
-                            </li>
-                            <li class="pt-2">
-                                <RouterLink to="/">Portfolio</RouterLink>
-                            </li>
-                            <li class="pt-2">
-                                <RouterLink to="/">About Us</RouterLink>
-                            </li>
-                        </ul>
+                         <div class="px-4 py-3 text-gray-600 ">
+                            <h2 class="tracking-wider font-playfair font-extrabold text-xl">Top Category</h2>
+                            <ul class="py-3 px-2 font-roboto leading-loose font-semibold text-sm tracking-wide">
+                                <li class=" uppercase hover:text-secondary">Bread</li>
+                                <li class=" uppercase hover:text-secondary">Pasty</li>
+                                <li class=" uppercase hover:text-secondary">Drinks</li>
+                                <li class=" uppercase hover:text-secondary">Hot-food</li>
+                                <li class=" uppercase hover:text-secondary">Cookies</li>
+                            </ul>
+                
+                            <h2 class="tracking-wider font-playfair font-extrabold text-xl">Our Branch</h2>
+                            <ul class="py-3 px-2 font-roboto leading-relaxed font-medium text-sm tracking-wide">
+                                <li class="">
+                                    <span class="text-secondary font-bold">POPLAR - </span> 
+                                    <span class="text-primary font-bold text-sm">Jamuna Future Park</span> 
+                                </li>
+                                <li>Level-5(5A-005), Cinema Next Door</li>
+                                <li>Kuril, Dhaka - 1229</li>
+                                <li>Hotline: 01847 - 228111</li>
+                            </ul>
+                             
+                            <ul class="py-3 px-2 font-roboto leading-relaxed font-medium text-sm tracking-wider">
+                                <li class="py-1">
+                                    <span class="text-secondary font-bold">POPLAR - </span> 
+                                    <span class="text-primary font-bold text-sm">Uttara</span> 
+                                </li>
+                                <li>House: #20, (Ground Floor)</li>
+                                <li>Lake Drive Road,Sector-7</li>
+                                <li>Uttara, Dhaka - 1230</li>
+                                <li>Hotline: 01325 - 099390</li>
+                            </ul>
+                
+                            <h2 class="tracking-wider font-playfair font-extrabold text-xl">Contact Us</h2>
+                            <ul class="pt-4 px-4 font-playfair leading-relaxed font-medium text-md tracking-wide">
+                                <li class="font-roboto text-sm ">Contact +1 473 483 384</li>
+                                <li class="font-roboto text-sm ">Office +1 395 393 595</li>
+                            </ul>
+                    
+                            <ul class="flex items-center gap-2 p-5">
+                                <li>
+                                    <a href="" class="w-8 h-8 flex items-center justify-center  text-white bg-primary hover:bg-secondary p-1">
+                                        <Icon name="mdi:twitter" class=" text-2xl" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="w-8 h-8 flex items-center justify-center text-white bg-primary hover:bg-secondary p-1">
+                                        <Icon name="gg:facebook" class=" text-2xl" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="w-8 h-8 flex items-center justify-center text-white bg-primary hover:bg-secondary p-1">
+                                        <Icon name="mingcute:whatsapp-line" class=" text-2xl"/>
+                                    </a>
+                                </li>  
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
