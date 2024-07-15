@@ -15,8 +15,6 @@ class Category extends Model
     {
         return $this->hasMany(Category::class, 'parent_id')->select(['id','parent_id','name','slug', 'icon', 'banner', 'description']);
     }
-    public function parent(): BelongsTo
-    {
-        return $this->belongsTo(Category::class, 'parent_id');
-    }
+   
 }
+                                                                                          

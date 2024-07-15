@@ -1,4 +1,6 @@
 <script setup>
+import { RouterLink } from 'vue-router';
+
 const props = defineProps({
         text:{
             type: Boolean,
@@ -13,6 +15,7 @@ const props = defineProps({
             <div class="bg-white/65">
                 <img class="p-2" src="@/assets/images/logo.png" alt="">
             </div>
+            
             <ul class="flex flex-col gap-5 p-5 ">
                 <li>
                     <RouterLink to="/dashboard" class="flex items-center gap-2">

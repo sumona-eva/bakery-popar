@@ -11,14 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('brands', function (Blueprint $table) {
+        Schema::create('order_areas', function (Blueprint $table) {
+           
             $table->id();
-            $table->string('name');
-            $table->string('slug')->unique();
-            $table->string('logo')->nullable();
-            $table->string('banner')->nullable();
-            $table->longText('description')->nullable();
+            $table->string('area_name');
+            $table->string('area_code');
+            $table->integer('delivery_charge');
+            $table->integer('charge_condition')->nullable();
+            $table->integer('charge_condition_price')->nullable();
             $table->timestamps();
+            
         });
     }
 
@@ -27,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('brands');
+        Schema::dropIfExists('order_areas');
     }
 };

@@ -24,23 +24,15 @@ return new class extends Migration
             ->cascadeOnDelete()
             ->cascadeOnUpdate();
 
-            $table->unsignedBigInteger('brand_id')
-            ->nullable();
+            $table->foreignId('branch_id')
+            ->contrained('branches')
+            ->cascadeOnDelete()
+            ->cascadeOnUpdate();
 
-            $table->unsignedBigInteger('updated_by')
-            ->nullable();
 
             $table->string('title');
-            $table->string('slug')->unique();
-            $table->mediumText('short_description')->nullable();
             $table->longText('description')->nullable();
-            $table->string('sku')->nullable();
-            $table->integer('stock')->nullable();
-            $table->string('thumbnail')->nullable();
-            $table->string('bar_code')->nullable();
             $table->integer('price');
-            $table->integer('discount')->nullable();
-            $table->enum('status', ['active','inactive'])->default('active');
             $table->timestamps();
         });
     }

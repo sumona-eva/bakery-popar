@@ -15,13 +15,12 @@
                   <div class="relative z-10 flex flex-col justify-between h-full">
                         <div class="flex items-center gap-4">
                               <div class="w-12 h-12 rounded-2xl bg-slate-400/50 border border-gray-100 flex items-center justify-center">
-                                <Icon name="carbon:settings-services"  class="text-gray-100 text-3xl" />
+                                <Icon name="ep:sell"  class="text-gray-100 text-3xl" />
                               </div>
-                              <h3 class="text-end text-3xl font-medium text-white">$5000</h3>
+                              <h3 class="text-end text-3xl font-medium text-white">1000</h3>
                         </div>
                         <div>
-                          <p class=" text-gray-200 text-xl text-end">Services</p>
-                          <p class="text-end font-light text-sm text-gray-200">Compared Last Year</p>
+                          <p class=" text-gray-200 text-xl text-end">Total Sell</p>
                         </div>
                   </div>
             </div>
@@ -35,9 +34,9 @@
                               <div class="w-12 h-12 rounded-2xl bg-slate-400/50 border border-gray-100 flex items-center justify-center">
                                     <Icon name="material-symbols:package-outline-rounded" class="text-gray-100 text-3xl" />
                               </div>
-                              <h3 class="text-end text-3xl font-medium text-white">$89</h3>
+                              <h3 class="text-end text-3xl font-medium text-white">500</h3>
                         </div>
-                        <p class="text-gray-200 text-xl text-end">Recent Packages</p>
+                        <p class="text-gray-200 text-xl text-end">Total Products</p>
                   </div>
             </div>
       </div>
@@ -48,12 +47,12 @@
                   <div class="relative z-10 flex flex-col justify-between h-full">
                         <div class="flex items-center gap-4">
                               <div class="w-12 h-12 rounded-2xl bg-slate-400/50 border border-gray-100 flex items-center justify-center">
-                                    <Icon name="clarity:employee-group-solid" class="text-gray-100 text-2xl" />
+                                    <Icon name="ant-design:product-outlined" class="text-gray-100 text-2xl" />
                               </div>
-                              <h3 class="text-end text-3xl font-medium text-white">15</h3>
+                              <h3 class="text-end text-3xl font-medium text-white">05</h3>
                         </div>
                         <div>
-                              <p class="text-white text-xl text-end">Total Employee</p>
+                              <p class="text-white text-xl text-end">Total Category</p>
                         </div>
                   </div>
             </div>
