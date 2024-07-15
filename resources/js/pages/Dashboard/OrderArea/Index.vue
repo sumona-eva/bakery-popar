@@ -10,10 +10,10 @@
                   <h3 class="text-secondary text-3xl font-semibold">Order Area Details</h3>
               </div>
               <div>
-                  <Button class="flex items-center gap-2">
-                      <Icon name="material-symbols:add-box-outline" />
-                      Add Record
-                  </Button>
+                <RouterLink to="/dashboard/create-area" class="bg-secondary text-white px-5 py-2 flex items-center gap-2">
+                    <Icon name="material-symbols:add-box-outline" />
+                    Add Record
+                </RouterLink>
               </div>
           </div>
           <div class="flex items-center justify-between">

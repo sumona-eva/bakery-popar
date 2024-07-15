@@ -98,10 +98,10 @@ const closeModal = () => {
             </RouterLink>
         </div>    
         <div class="flex justify-end group px-3">
-            <button class="relative flex items-center px-5 py-1 font-playfair tracking-widest bg-white border border-primary group-hover:border-secondary  transition-all ease-in-out duration-500">
+            <RouterLink to="/add-cart" class="relative flex items-center px-5 py-1 font-playfair tracking-widest bg-white border border-primary group-hover:border-secondary  transition-all ease-in-out duration-500">
                 <Icon name="material-symbols-light:shopping-cart-outline-rounded" class=" text-3xl text-primary hover:scale-110 transition-all ease-in-out duration-500" />
                 <span class="absolute flex items-center justify-center w-4 h-4 bg-secondary rounded-full top-0 right-3 text-white text-sm">4</span>
-            </button>
+            </RouterLink>
         </div>  
     </div>
   </section>

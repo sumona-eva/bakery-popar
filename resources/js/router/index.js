@@ -80,9 +80,19 @@ const router = createRouter({
       component: () => import('@/pages/Dashboard/OrderArea/Index.vue')
     },
     {
+      path: '/dashboard/create-area',
+      name: 'CreateArea',
+      component: () => import('@/pages/Dashboard/OrderArea/Add.vue')
+    },
+    {
       path: '/dashboard/customer',
       name: 'Customer',
       component: () => import('@/pages/Dashboard/Customer/Index.vue')
+    },
+    {
+      path: '/dashboard/create-customer',
+      name: 'CreateCustomer',
+      component: () => import('@/pages/Dashboard/Customer/Add.vue')
     },
     {
       path: '/dashboard/settings',

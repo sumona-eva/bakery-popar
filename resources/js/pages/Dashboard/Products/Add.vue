@@ -130,4 +130,4 @@
             <button>Save Product</button>
         </div>
     </DashboardLayout>
-</template>+
+</template>
