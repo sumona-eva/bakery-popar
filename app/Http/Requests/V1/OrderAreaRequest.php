@@ -4,14 +4,14 @@ namespace App\Http\Requests\V1;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CategoryRequest extends FormRequest
+class OrderAreaRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,9 +22,12 @@ class CategoryRequest extends FormRequest
     public function rules(): array
     {
         return [
-               'name' => 'required|string|max:255',
-               'image' => 'nullable||mimes:png,jpg,jpeg,webp',
-               'order_number' => 'required|integer',
+            'area_name' => 'required|string',
+            'area_code' => 'required|integer',
+            'condition_price' => 'required|integer',
+            'condition_charge' => 'required|integer',
+            'delivery_charge' => 'required|integer'
+
         ];
     }
 }

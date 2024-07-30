@@ -25,14 +25,19 @@ return new class extends Migration
             ->cascadeOnUpdate();
 
             $table->foreignId('branch_id')
-            ->contrained('branches')
+            ->constrained('branches')
             ->cascadeOnDelete()
             ->cascadeOnUpdate();
 
 
             $table->string('title');
+            $table->string('slug');
             $table->longText('description')->nullable();
+            $table->longText('short_description')->nullable();
             $table->integer('price');
+            $table->integer('discount_price');
+            $table->integer('sku');
+            $table->integer('stock')->nullable();
             $table->timestamps();
         });
     }

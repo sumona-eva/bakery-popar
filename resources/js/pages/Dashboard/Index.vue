@@ -1,10 +1,10 @@
-<script setup> 
+<script setup>
  import BarChart from '@/components/BarChart.vue';
  import RecentOrder from '@/components/RecentOrder.vue';
 </script>
 <template>
   <DashboardLayout>
-        
+
     <div class="flex mb-5 -mx-3">
 
       <div class="w-1/4 px-3">
@@ -78,7 +78,7 @@
 
     <div class="flex -mx-2" >
         <div class="w-full px-2">
-            <div class="p-4 shado">
+            <div class="p-4 shadow">
                 <!-- <BarChart /> -->
                 <BarChart />
             </div>
@@ -88,5 +88,5 @@
     <div class="mt-5 mx-4 bg-white">
             <RecentOrder />
      </div>
-  </DashboardLayout>  
+  </DashboardLayout>
 </template>

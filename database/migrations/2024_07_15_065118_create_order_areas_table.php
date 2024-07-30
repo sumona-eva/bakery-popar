@@ -12,15 +12,16 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('order_areas', function (Blueprint $table) {
-           
+
             $table->id();
             $table->string('area_name');
             $table->string('area_code');
             $table->integer('delivery_charge');
-            $table->integer('charge_condition')->nullable();
+            $table->double('condition_price')->nullable();
+            $table->integer('condition_charge')->nullable();
             $table->integer('charge_condition_price')->nullable();
             $table->timestamps();
-            
+
         });
     }
 

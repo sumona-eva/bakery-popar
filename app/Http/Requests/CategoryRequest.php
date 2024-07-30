@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\V1;
+namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -11,7 +11,7 @@ class CategoryRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,9 +22,10 @@ class CategoryRequest extends FormRequest
     public function rules(): array
     {
         return [
-               'name' => 'required|string|max:255',
-               'image' => 'nullable||mimes:png,jpg,jpeg,webp',
-               'order_number' => 'required|integer',
+            'name' => 'required|string|max:255',
+            'image' => 'nullable||mimes:png,jpg,jpeg,webp',
+            'order_number' => 'required|integer',
+
         ];
     }
 }
